@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BF442FAD2759F6D8004A2BA5 /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FAC2759F6D8004A2BA5 /* loginApp.swift */; };
-		BF442FAF2759F6D8004A2BA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FAE2759F6D8004A2BA5 /* ContentView.swift */; };
-		BF442FB12759F6DB004A2BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF442FB02759F6DB004A2BA5 /* Assets.xcassets */; };
 		BF442FB42759F6DB004A2BA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */; };
 		BF442FBF2759F6DB004A2BA5 /* loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FBE2759F6DB004A2BA5 /* loginTests.swift */; };
 		BF442FCA2759F6DC004A2BA5 /* loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FC92759F6DC004A2BA5 /* loginUITests.swift */; };
+		BF442FDC2759F79A004A2BA5 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */; };
+		BF4E7053275DF83A00636B90 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7052275DF83A00636B90 /* Home.swift */; };
+		BF4E705E275E048A00636B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4E705D275E048A00636B90 /* Assets.xcassets */; };
+		BF4E7063275E0BAF00636B90 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7062275E0BAF00636B90 /* SignUp.swift */; };
+		BF4E7068275E0D5600636B90 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7067275E0D5600636B90 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,6 @@
 /* Begin PBXFileReference section */
 		BF442FA92759F6D8004A2BA5 /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF442FAC2759F6D8004A2BA5 /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
-		BF442FAE2759F6D8004A2BA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BF442FB02759F6DB004A2BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF442FB52759F6DB004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF442FBA2759F6DB004A2BA5 /* loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,11 @@
 		BF442FC52759F6DC004A2BA5 /* loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF442FC92759F6DC004A2BA5 /* loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUITests.swift; sourceTree = "<group>"; };
 		BF442FCB2759F6DC004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		BF4E7052275DF83A00636B90 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BF4E705D275E048A00636B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		BF4E7062275E0BAF00636B90 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		BF4E7067275E0D5600636B90 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,9 @@
 		BF442FAB2759F6D8004A2BA5 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				BF4E705D275E048A00636B90 /* Assets.xcassets */,
+				BF442FDA2759F761004A2BA5 /* loginScreen */,
 				BF442FAC2759F6D8004A2BA5 /* loginApp.swift */,
-				BF442FAE2759F6D8004A2BA5 /* ContentView.swift */,
-				BF442FB02759F6DB004A2BA5 /* Assets.xcassets */,
 				BF442FB52759F6DB004A2BA5 /* Info.plist */,
 				BF442FB22759F6DB004A2BA5 /* Preview Content */,
 			);
@@ -128,6 +134,17 @@
 				BF442FCB2759F6DC004A2BA5 /* Info.plist */,
 			);
 			path = loginUITests;
+			sourceTree = "<group>";
+		};
+		BF442FDA2759F761004A2BA5 /* loginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BF4E7067275E0D5600636B90 /* Common.swift */,
+				BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */,
+				BF4E7052275DF83A00636B90 /* Home.swift */,
+				BF4E7062275E0BAF00636B90 /* SignUp.swift */,
+			);
+			path = loginScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4E705E275E048A00636B90 /* Assets.xcassets in Resources */,
 				BF442FB42759F6DB004A2BA5 /* Preview Assets.xcassets in Resources */,
-				BF442FB12759F6DB004A2BA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF442FAF2759F6D8004A2BA5 /* ContentView.swift in Sources */,
+				BF442FDC2759F79A004A2BA5 /* LoginScreen.swift in Sources */,
+				BF4E7063275E0BAF00636B90 /* SignUp.swift in Sources */,
+				BF4E7053275DF83A00636B90 /* Home.swift in Sources */,
+				BF4E7068275E0D5600636B90 /* Common.swift in Sources */,
 				BF442FAD2759F6D8004A2BA5 /* loginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
