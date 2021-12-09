@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF442FAD2759F6D8004A2BA5 /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FAC2759F6D8004A2BA5 /* loginApp.swift */; };
-		BF442FB42759F6DB004A2BA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */; };
-		BF442FBF2759F6DB004A2BA5 /* loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FBE2759F6DB004A2BA5 /* loginTests.swift */; };
-		BF442FCA2759F6DC004A2BA5 /* loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FC92759F6DC004A2BA5 /* loginUITests.swift */; };
 		BF442FDC2759F79A004A2BA5 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */; };
 		BF4E7053275DF83A00636B90 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7052275DF83A00636B90 /* Home.swift */; };
 		BF4E705E275E048A00636B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4E705D275E048A00636B90 /* Assets.xcassets */; };
@@ -39,14 +36,9 @@
 /* Begin PBXFileReference section */
 		BF442FA92759F6D8004A2BA5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF442FAC2759F6D8004A2BA5 /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
-		BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF442FB52759F6DB004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF442FBA2759F6DB004A2BA5 /* loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF442FBE2759F6DB004A2BA5 /* loginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTests.swift; sourceTree = "<group>"; };
-		BF442FC02759F6DB004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF442FC52759F6DC004A2BA5 /* loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF442FC92759F6DC004A2BA5 /* loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUITests.swift; sourceTree = "<group>"; };
-		BF442FCB2759F6DC004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		BF4E7052275DF83A00636B90 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BF4E705D275E048A00636B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
@@ -84,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				BF442FAB2759F6D8004A2BA5 /* login */,
-				BF442FBD2759F6DB004A2BA5 /* loginTests */,
-				BF442FC82759F6DC004A2BA5 /* loginUITests */,
 				BF442FAA2759F6D8004A2BA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,51 +93,40 @@
 		BF442FAB2759F6D8004A2BA5 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				BF5AB7182762019F00895BA6 /* View */,
+				BF5AB7172762019600895BA6 /* Controller */,
+				BF5AB7162762018800895BA6 /* Common */,
 				BF4E705D275E048A00636B90 /* Assets.xcassets */,
-				BF442FDA2759F761004A2BA5 /* loginScreen */,
 				BF442FAC2759F6D8004A2BA5 /* loginApp.swift */,
 				BF442FB52759F6DB004A2BA5 /* Info.plist */,
-				BF442FB22759F6DB004A2BA5 /* Preview Content */,
 			);
 			path = login;
 			sourceTree = "<group>";
 		};
-		BF442FB22759F6DB004A2BA5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BF442FBD2759F6DB004A2BA5 /* loginTests */ = {
-			isa = PBXGroup;
-			children = (
-				BF442FBE2759F6DB004A2BA5 /* loginTests.swift */,
-				BF442FC02759F6DB004A2BA5 /* Info.plist */,
-			);
-			path = loginTests;
-			sourceTree = "<group>";
-		};
-		BF442FC82759F6DC004A2BA5 /* loginUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BF442FC92759F6DC004A2BA5 /* loginUITests.swift */,
-				BF442FCB2759F6DC004A2BA5 /* Info.plist */,
-			);
-			path = loginUITests;
-			sourceTree = "<group>";
-		};
-		BF442FDA2759F761004A2BA5 /* loginScreen */ = {
+		BF5AB7162762018800895BA6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				BF4E7067275E0D5600636B90 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF5AB7172762019600895BA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF5AB7112761B65A00895BA6 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF5AB7182762019F00895BA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */,
 				BF4E7052275DF83A00636B90 /* Home.swift */,
 				BF4E7062275E0BAF00636B90 /* SignUp.swift */,
-				BF5AB7112761B65A00895BA6 /* Controller.swift */,
 			);
-			path = loginScreen;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4E705E275E048A00636B90 /* Assets.xcassets in Resources */,
-				BF442FB42759F6DB004A2BA5 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF442FBF2759F6DB004A2BA5 /* loginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF442FCA2759F6DC004A2BA5 /* loginUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
