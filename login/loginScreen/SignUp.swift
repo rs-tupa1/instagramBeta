@@ -55,7 +55,13 @@ struct SignUp: View {
                         .background(Color.purple.opacity(0.2))
                         .cornerRadius(5)
                         
-                        NavigationLink ("", destination: Home(), isActive: $isActive)
+                        NavigationLink (
+                            "",
+                            destination: Home()
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true),
+                            isActive: $isActive
+                        )
                         
                         Spacer()
                         

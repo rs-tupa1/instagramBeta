@@ -42,7 +42,13 @@ struct LoginScreen: View {
                     .buttonStyle(BorderButtonStyle())
                     .cornerRadius(5)
                     
-                    NavigationLink ("", destination: Home(), isActive: $isActive)
+                    NavigationLink (
+                        "",
+                        destination: Home()
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true),
+                        isActive: $isActive
+                    )
                     
                     HStack {
                         
