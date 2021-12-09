@@ -16,6 +16,7 @@
 		BF4E705E275E048A00636B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4E705D275E048A00636B90 /* Assets.xcassets */; };
 		BF4E7063275E0BAF00636B90 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7062275E0BAF00636B90 /* SignUp.swift */; };
 		BF4E7068275E0D5600636B90 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E7067275E0D5600636B90 /* Common.swift */; };
+		BF5AB7122761B65A00895BA6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AB7112761B65A00895BA6 /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF442FA92759F6D8004A2BA5 /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF442FA92759F6D8004A2BA5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF442FAC2759F6D8004A2BA5 /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
 		BF442FB32759F6DB004A2BA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF442FB52759F6DB004A2BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		BF4E705D275E048A00636B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		BF4E7062275E0BAF00636B90 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		BF4E7067275E0D5600636B90 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BF5AB7112761B65A00895BA6 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 		BF442FAA2759F6D8004A2BA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF442FA92759F6D8004A2BA5 /* login.app */,
+				BF442FA92759F6D8004A2BA5 /* Instagram.app */,
 				BF442FBA2759F6DB004A2BA5 /* loginTests.xctest */,
 				BF442FC52759F6DC004A2BA5 /* loginUITests.xctest */,
 			);
@@ -143,6 +145,7 @@
 				BF442FDB2759F79A004A2BA5 /* LoginScreen.swift */,
 				BF4E7052275DF83A00636B90 /* Home.swift */,
 				BF4E7062275E0BAF00636B90 /* SignUp.swift */,
+				BF5AB7112761B65A00895BA6 /* Controller.swift */,
 			);
 			path = loginScreen;
 			sourceTree = "<group>";
@@ -150,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF442FA82759F6D8004A2BA5 /* login */ = {
+		BF442FA82759F6D8004A2BA5 /* Instagram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF442FCE2759F6DC004A2BA5 /* Build configuration list for PBXNativeTarget "login" */;
+			buildConfigurationList = BF442FCE2759F6DC004A2BA5 /* Build configuration list for PBXNativeTarget "Instagram" */;
 			buildPhases = (
 				BF442FA52759F6D8004A2BA5 /* Sources */,
 				BF442FA62759F6D8004A2BA5 /* Frameworks */,
@@ -162,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = login;
+			name = Instagram;
 			productName = login;
-			productReference = BF442FA92759F6D8004A2BA5 /* login.app */;
+			productReference = BF442FA92759F6D8004A2BA5 /* Instagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BF442FB92759F6DB004A2BA5 /* loginTests */ = {
@@ -238,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF442FA82759F6D8004A2BA5 /* login */,
+				BF442FA82759F6D8004A2BA5 /* Instagram */,
 				BF442FB92759F6DB004A2BA5 /* loginTests */,
 				BF442FC42759F6DC004A2BA5 /* loginUITests */,
 			);
@@ -279,6 +282,7 @@
 				BF442FDC2759F79A004A2BA5 /* LoginScreen.swift in Sources */,
 				BF4E7063275E0BAF00636B90 /* SignUp.swift in Sources */,
 				BF4E7053275DF83A00636B90 /* Home.swift in Sources */,
+				BF5AB7122761B65A00895BA6 /* Controller.swift in Sources */,
 				BF4E7068275E0D5600636B90 /* Common.swift in Sources */,
 				BF442FAD2759F6D8004A2BA5 /* loginApp.swift in Sources */,
 			);
@@ -305,12 +309,12 @@
 /* Begin PBXTargetDependency section */
 		BF442FBC2759F6DB004A2BA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BF442FA82759F6D8004A2BA5 /* login */;
+			target = BF442FA82759F6D8004A2BA5 /* Instagram */;
 			targetProxy = BF442FBB2759F6DB004A2BA5 /* PBXContainerItemProxy */;
 		};
 		BF442FC72759F6DC004A2BA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BF442FA82759F6D8004A2BA5 /* login */;
+			target = BF442FA82759F6D8004A2BA5 /* Instagram */;
 			targetProxy = BF442FC62759F6DC004A2BA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -566,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF442FCE2759F6DC004A2BA5 /* Build configuration list for PBXNativeTarget "login" */ = {
+		BF442FCE2759F6DC004A2BA5 /* Build configuration list for PBXNativeTarget "Instagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF442FCF2759F6DC004A2BA5 /* Debug */,

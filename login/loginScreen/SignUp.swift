@@ -13,6 +13,7 @@ struct SignUp: View {
     @State var fullname: String = ""
     @State var username: String = ""
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var isActive: Bool = false
     
     
     var body: some View {
@@ -32,7 +33,7 @@ struct SignUp: View {
                             .renderingMode(.template)
                             .foregroundColor(.white)
                             .padding()
-                                                
+                        
                         CustomTextField(placeholder: "Email", type: TypeInput.email, text: self.$email)
                         
                         CustomTextField(placeholder: "Password", isPass: true, type: TypeInput.password, text: self.$password)
@@ -43,16 +44,19 @@ struct SignUp: View {
                         
                         Button(action: {
                             
+                            action()
                         }) {
                             
-                            NavigationLink ("Sign Up", destination: Home())
+                            Text("Sign Up")
                                 .foregroundColor(.white)
                                 .padding()
                         }
                         .buttonStyle(BorderButtonStyle())
                         .background(Color.purple.opacity(0.2))
                         .cornerRadius(5)
-                                            
+                        
+                        NavigationLink ("", destination: Home(), isActive: $isActive)
+                        
                         Spacer()
                         
                         HStack {
@@ -73,5 +77,16 @@ struct SignUp: View {
             .navigationBarHidden(true)
         }
         .navigationBarHidden(true)
+    }
+    
+    func action() {
+        
+        if !validate(email: email, password: password) || !(self.fullname.count > 0) || !(self.username.count > 0) {
+            
+            self.isActive =  false
+            
+            return;
+        }
+        self.isActive = true
     }
 }

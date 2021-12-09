@@ -33,7 +33,7 @@ struct LoginScreen: View {
                     
                     Button(action: {
                         
-                        validate(email: email, password: password)
+                        self.isActive = validate(email: email, password: password)
                     }) {
                         
                         Text("Log In")
@@ -67,18 +67,6 @@ struct LoginScreen: View {
                 .padding(.all)
             }
             .navigationBarHidden(true)
-        }
-    }
-    
-    func validate(email: String, password: String) {
-        
-        if !textFieldValidatorEmail(value: email, type: TypeInput.email) || !textFieldValidatorEmail(value: password, type: TypeInput.password) {
-            
-            self.isActive = false
-        }
-        else {
-            
-            self.isActive = true
         }
     }
 }
