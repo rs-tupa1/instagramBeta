@@ -11,6 +11,8 @@ struct LoginScreen: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isActive: Bool = false
+    @State private var isEmailValid: Bool = true
+    @State private var isPasswordValid: Bool = true
     
     var body: some View {
         
@@ -27,12 +29,14 @@ struct LoginScreen: View {
                     Image("Instagram_logo_white")
                         .padding()
                     
-                    CustomTextField(placeholder: "Email", type: TypeInput.email, text: self.$email)
+                    CustomTextField(placeholder: "Email", type: TypeInput.email, isInputValid: self.$isEmailValid, text: self.$email)
                     
-                    CustomTextField(placeholder: "Password", isPass: true, type: TypeInput.password, text: self.$password)
+                    CustomTextField(placeholder: "Password", isPass: true, type: TypeInput.password, isInputValid: self.$isPasswordValid, text: self.$password)
                     
                     Button(action: {
                         
+                        
+                        isEmptyInput()
                         self.isActive = validate(email: email, password: password)
                     }) {
                         
@@ -73,6 +77,19 @@ struct LoginScreen: View {
                 .padding(.all)
             }
             .navigationBarHidden(true)
+        }
+    }
+    
+    func isEmptyInput() {
+        
+        if self.email.isEmpty {
+            
+            self.isEmailValid = false
+        }
+        
+        if self.password.isEmpty {
+            
+            self.isPasswordValid = false
         }
     }
 }

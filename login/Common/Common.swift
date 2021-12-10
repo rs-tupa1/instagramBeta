@@ -17,7 +17,7 @@ struct CustomTextField: View {
     let placeholder: String
     var isPass: Bool = false
     var type: TypeInput = TypeInput.text
-    @State private var isEmailValid : Bool = true
+    @Binding var isInputValid : Bool
     @Binding var text: String
     
     var body: some View {
@@ -56,7 +56,7 @@ struct CustomTextField: View {
                 }
             }
             
-            if !self.isEmailValid {
+            if !self.isInputValid {
                 
                 switch self.type {
                 case TypeInput.email:
@@ -69,7 +69,8 @@ struct CustomTextField: View {
                         .foregroundColor(Color.red)
                 case .text:
                     
-                    EmptyView()
+                    Text("Can't be left empty")
+                        .foregroundColor(Color.red)
                 }
             }
         }
@@ -78,9 +79,9 @@ struct CustomTextField: View {
     func onChanged(value:String) {
         if textFieldValidatorEmail(value: self.text, type: self.type) {
             
-            self.isEmailValid = true
+            self.isInputValid = true
         } else {
-            self.isEmailValid = false
+            self.isInputValid = false
         }
     }
 }

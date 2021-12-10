@@ -14,13 +14,16 @@ struct SignUp: View {
     @State var username: String = ""
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var isActive: Bool = false
-    
+    @State private var isEmailValid: Bool = true
+    @State private var isPasswordValid: Bool = true
+    @State private var isFullNameValid: Bool = true
+    @State private var isUserNameValid: Bool = true
     
     var body: some View {
         
         NavigationView {
             
-            ZStack {
+            ZStack (alignment: .bottom) {
                 
                 LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.vertical)
@@ -34,16 +37,18 @@ struct SignUp: View {
                             .foregroundColor(.white)
                             .padding()
                         
-                        CustomTextField(placeholder: "Email", type: TypeInput.email, text: self.$email)
                         
-                        CustomTextField(placeholder: "Password", isPass: true, type: TypeInput.password, text: self.$password)
+                        CustomTextField(placeholder: "Email", type: TypeInput.email, isInputValid: self.$isEmailValid, text: self.$email)
                         
-                        CustomTextField(placeholder: "Fullname", type: TypeInput.text, text: self.$fullname)
+                        CustomTextField(placeholder: "Password", isPass: true, type: TypeInput.password, isInputValid: self.$isPasswordValid, text: self.$password)
                         
-                        CustomTextField(placeholder: "Username", type: TypeInput.text, text: self.$username)
+                        CustomTextField(placeholder: "Fullname", type: TypeInput.text, isInputValid: self.$isFullNameValid, text: self.$fullname)
+                        
+                        CustomTextField(placeholder: "Username", type: TypeInput.text, isInputValid: self.$isUserNameValid, text: self.$username)
                         
                         Button(action: {
                             
+                            isEmptyInput()
                             action()
                         }) {
                             
@@ -62,23 +67,22 @@ struct SignUp: View {
                                 .navigationBarHidden(true),
                             isActive: $isActive
                         )
-                        
-                        Spacer()
-                        
-                        HStack {
-                            
-                            Text("Already have an account?")
-                                .foregroundColor(.white)
-                            
-                            Button("Sign In", action: {
-                                
-                                self.presentationMode.wrappedValue.dismiss()
-                            })
-                            .foregroundColor(.white)
-                        }
                     }
                     .padding(.all)
                 }
+                
+                HStack {
+                    
+                    Text("Already have an account?")
+                        .foregroundColor(.white)
+                    
+                    Button("Sign In", action: {
+                        
+                        self.presentationMode.wrappedValue.dismiss()
+                    })
+                    .foregroundColor(.white)
+                }
+                .padding()
             }
             .navigationBarHidden(true)
         }
@@ -94,5 +98,28 @@ struct SignUp: View {
             return;
         }
         self.isActive = true
+    }
+    
+    func isEmptyInput() {
+        
+        if self.email.isEmpty {
+            
+            self.isEmailValid = false
+        }
+        
+        if self.password.isEmpty {
+            
+            self.isPasswordValid = false
+        }
+        
+        if self.fullname.isEmpty {
+            
+            self.isFullNameValid = false
+        }
+        
+        if self.username.isEmpty {
+            
+            self.isUserNameValid = false
+        }
     }
 }
